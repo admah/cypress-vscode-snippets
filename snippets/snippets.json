@@ -1,0 +1,135 @@
+{
+	"addCommand": {
+		"prefix": "cycoa",
+		"body": [
+			"Cypress.Commands.add('$1')"
+		],
+		"description": "Insert Cypress.Commands.add()"
+	},
+    "clock": {
+		"prefix": "cycl",
+		"body": [
+			"cy.clock()"
+		],
+		"description": "Insert cy.clock()"
+	},
+	"contains": {
+		"prefix": "cyc",
+		"body": [
+			"cy.contains('$1');"
+		],
+		"description": "Insert cy.contains()"
+	},
+    "debug": {
+		"prefix": "cydeb",
+		"body": [
+			"cy.debug();"
+		],
+		"description": "Insert cy.debug()"
+	},
+    "document": {
+		"prefix": "cydoc",
+		"body": [
+			"cy.document();"
+		],
+		"description": "Insert cy.document()"
+	},
+    "fixture": {
+		"prefix": "cyfix",
+		"body": [
+			"cy.fixture('$1');"
+		],
+		"description": "Insert cy.fixture()"
+	},
+	"focused": {
+		"prefix": "cyfoc",
+		"body": [
+			"cy.focused();"
+		],
+		"description": "Insert cy.focused()"
+	},
+	"get": {
+		"prefix": "cyg",
+		"body": [
+			"cy.get('$1');"
+		],
+		"description": "Insert cy.get()"
+	},
+    "getCookie": {
+		"prefix": "cygc",
+		"body": [
+			"cy.getCookie('$1');"
+		],
+		"description": "Insert cy.getCookie()"
+	},
+    "getCookies": {
+		"prefix": "cygcs",
+		"body": [
+			"cy.getCookies();"
+		],
+		"description": "Insert cy.getCookies()"
+	},
+    "goBack": {
+		"prefix": "cygob",
+		"body": [
+			"cy.go('back');"
+		],
+		"description": "Insert cy.go('back')"
+	},
+    "goForward": {
+		"prefix": "cygof",
+		"body": [
+			"cy.go('forward');"
+		],
+		"description": "Insert cy.go('forward')"
+	},
+	"intercept": {
+		"prefix": "cyi",
+		"body": [
+			"cy.intercept('$1');"
+		],
+		"description": "Insert cy.intercept()"
+	},
+    "overwriteCommand": {
+		"prefix": "cycoo",
+		"body": [
+			"Cypress.Commands.overwrite('$1')"
+		],
+		"description": "Insert Cypress.Commands.overwrite()"
+	},
+	"request": {
+		"prefix": "cyreq",
+		"body": [
+			"cy.request('$1');"
+		],
+		"description": "Insert cy.request()"
+	},
+	"spy": {
+		"prefix": "cysp",
+		"body": [
+			"cy.spy('$1');"
+		],
+		"description": "Insert cy.spy()"
+	},
+	"stub": {
+		"prefix": "cyst",
+		"body": [
+			"cy.stub('$1');"
+		],
+		"description": "Insert cy.stub()"
+	},
+    "tick": {
+		"prefix": "cyti",
+		"body": [
+			"cy.tick()"
+		],
+		"description": "Insert cy.tick()"
+	},
+	"visit": {
+		"prefix": "cyv",
+		"body": [
+			"cy.visit('$1');"
+		],
+		"description": "Insert cy.visit()"
+	}
+}
