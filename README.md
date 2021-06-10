@@ -1,4 +1,4 @@
-# Cypress VS Code Snippets
+# Cypress VS Code Helpers
 
 A collection of Cypress templates and commands
 
@@ -17,6 +17,8 @@ A collection of Cypress templates and commands
 | `cycls`  | Insert cy.clearLocalStorage()       |
 | `cyclo`  | Insert cy.clock()                   |
 | `cycon`  | Insert cy.contains()                |
+| `cyit`   | Insert it()                         |
+| `cyspec` | Insert describe() template          |
 | `cydeb`  | Insert cy.debug()                   |
 | `cydoc`  | Insert cy.document()                |
 | `cyfix`  | Insert cy.fixture()                 |

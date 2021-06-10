@@ -29,6 +29,27 @@
     "body": ["cy.contains('$1');"],
     "description": "Insert cy.contains()"
   },
+  "createIt": {
+    "prefix": "cyit",
+    "body": ["  it(\"\", function () {", "  });"],
+    "description": "Insert it()"
+  },
+  "createSpec": {
+    "prefix": "cyspec",
+    "body": [
+      "describe(\"Example\", function () {",
+      "  beforeEach(function () {",
+      "  });",
+      "",
+      "  it(\"should be a test\", function () {",
+      "  });",
+      "",
+      "  it(\"should be another test\", function () {",
+      "  });",
+      "});"
+    ],
+    "description": "Insert basic test template"
+  },
   "debug": {
     "prefix": "cydeb",
     "body": ["cy.debug();"],
