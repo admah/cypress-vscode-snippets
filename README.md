@@ -1,11 +1,6 @@
 # Cypress VS Code Helpers
 
-A collection of Cypress templates and commands
-
-## Supported languages (file extensions)
-
-- JavaScript (.js)
-- TypeScript (.ts)
+A collection of Cypress commands for rapid development
 
 ## Snippets
 
