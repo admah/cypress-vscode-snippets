@@ -1,16 +1,16 @@
 {
   "addCommand": {
-    "prefix": "cycoa",
+    "prefix": "cyca",
     "body": ["Cypress.Commands.add('$1')"],
     "description": "Insert Cypress.Commands.add()"
   },
   "clearCookie": {
-    "prefix": "cycl",
+    "prefix": "cycc",
     "body": ["cy.clearCookie()"],
     "description": "Insert cy.clearCookie()"
   },
   "clearCookies": {
-    "prefix": "cyclc",
+    "prefix": "cyccs",
     "body": ["cy.clearCookies()"],
     "description": "Insert cy.clearCookies()"
   },
@@ -90,7 +90,7 @@
     "description": "Insert cy.log()"
   },
   "overwriteCommand": {
-    "prefix": "cycoo",
+    "prefix": "cyco",
     "body": ["Cypress.Commands.overwrite('$1')"],
     "description": "Insert Cypress.Commands.overwrite()"
   },
@@ -145,12 +145,12 @@
     "description": "Insert cy.stub()"
   },
   "tick": {
-    "prefix": "cytic",
+    "prefix": "cytk",
     "body": ["cy.tick()"],
     "description": "Insert cy.tick()"
   },
   "title": {
-    "prefix": "cytit",
+    "prefix": "cytt",
     "body": ["cy.title()"],
     "description": "Insert cy.title()"
   },
