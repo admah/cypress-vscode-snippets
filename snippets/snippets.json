@@ -2,207 +2,211 @@
   "addCommand": {
     "prefix": "cyca",
     "body": ["Cypress.Commands.add('$1')"],
-    "description": "Insert Cypress.Commands.add()"
+    "description": "Cypress.Commands.add()"
   },
   "clearCookie": {
     "prefix": "cycc",
     "body": ["cy.clearCookie()"],
-    "description": "Insert cy.clearCookie()"
+    "description": "cy.clearCookie()"
   },
   "clearCookies": {
     "prefix": "cyccs",
     "body": ["cy.clearCookies()"],
-    "description": "Insert cy.clearCookies()"
+    "description": "cy.clearCookies()"
   },
   "clearLocalStorage": {
     "prefix": "cycls",
     "body": ["cy.clearLocalStorage()"],
-    "description": "Insert cy.clearLocalStorage()"
+    "description": "cy.clearLocalStorage()"
   },
   "clock": {
     "prefix": "cyclo",
     "body": ["cy.clock()"],
-    "description": "Insert cy.clock()"
+    "description": "cy.clock()"
   },
   "contains": {
     "prefix": "cycon",
-    "body": ["cy.contains('$1');"],
-    "description": "Insert cy.contains()"
+    "body": ["cy.contains('$1')"],
+    "description": "cy.contains()"
+  },
+  "createAfterEach": {
+    "prefix": "cyae",
+    "body": ["afterEach(() => {})"],
+    "description": "afterEach(() => {})"
+  },
+  "createBeforeEach": {
+    "prefix": "cybe",
+    "body": ["beforeEach(() => {})"],
+    "description": "beforeEach(() => {})"
   },
   "createIt": {
     "prefix": "cyit",
-    "body": ["  it(\"\", function () {", "  });"],
-    "description": "Insert it()"
+    "body": ["it(\"\", function () {", "  })"],
+    "description": "it()"
   },
   "createSpec": {
     "prefix": "cyspec",
     "body": [
-      "describe(\"Example\", function () {",
-      "  beforeEach(function () {",
-      "  });",
-      "",
-      "  it(\"should be a test\", function () {",
-      "  });",
-      "",
-      "  it(\"should be another test\", function () {",
-      "  });",
-      "});"
+      "describe(\"\", function () {",
+      "  it(\"\", function () {",
+      "  })",
+      "})"
     ],
-    "description": "Insert basic test template"
+    "description": "add describe block"
   },
   "debug": {
     "prefix": "cydeb",
-    "body": ["cy.debug();"],
-    "description": "Insert cy.debug()"
+    "body": ["cy.debug()"],
+    "description": "cy.debug()"
   },
   "document": {
     "prefix": "cydoc",
-    "body": ["cy.document();"],
-    "description": "Insert cy.document()"
+    "body": ["cy.document()"],
+    "description": "cy.document()"
   },
   "fixture": {
     "prefix": "cyfix",
-    "body": ["cy.fixture('$1');"],
-    "description": "Insert cy.fixture()"
+    "body": ["cy.fixture('$1')"],
+    "description": "cy.fixture()"
   },
   "focused": {
     "prefix": "cyfoc",
-    "body": ["cy.focused();"],
-    "description": "Insert cy.focused()"
+    "body": ["cy.focused()"],
+    "description": "cy.focused()"
   },
   "get": {
     "prefix": "cyg",
-    "body": ["cy.get('$1');"],
-    "description": "Insert cy.get()"
+    "body": ["cy.get('$1')"],
+    "description": "cy.get()"
   },
   "getCookie": {
     "prefix": "cygc",
-    "body": ["cy.getCookie('$1');"],
-    "description": "Insert cy.getCookie()"
+    "body": ["cy.getCookie('$1')"],
+    "description": "cy.getCookie()"
   },
   "getCookies": {
     "prefix": "cygcs",
-    "body": ["cy.getCookies();"],
-    "description": "Insert cy.getCookies()"
+    "body": ["cy.getCookies()"],
+    "description": "cy.getCookies()"
   },
   "goBack": {
     "prefix": "cygob",
-    "body": ["cy.go('back');"],
-    "description": "Insert cy.go('back')"
+    "body": ["cy.go('back')"],
+    "description": "cy.go('back')"
   },
   "goForward": {
     "prefix": "cygof",
-    "body": ["cy.go('forward');"],
-    "description": "Insert cy.go('forward')"
+    "body": ["cy.go('forward')"],
+    "description": "cy.go('forward')"
   },
   "intercept": {
     "prefix": "cyint",
-    "body": ["cy.intercept('$1');"],
-    "description": "Insert cy.intercept()"
+    "body": ["cy.intercept('$1')"],
+    "description": "cy.intercept()"
   },
   "location": {
     "prefix": "cyloc",
     "body": ["cy.location()"],
-    "description": "Insert cy.location()"
+    "description": "cy.location()"
   },
   "log": {
     "prefix": "cylog",
     "body": ["cy.log()"],
-    "description": "Insert cy.log()"
+    "description": "cy.log()"
   },
   "overwriteCommand": {
     "prefix": "cyco",
     "body": ["Cypress.Commands.overwrite('$1')"],
-    "description": "Insert Cypress.Commands.overwrite()"
+    "description": "Cypress.Commands.overwrite()"
   },
   "pause": {
     "prefix": "cypa",
     "body": ["cy.pause()"],
-    "description": "Insert cy.pause()"
+    "description": "cy.pause()"
   },
   "readFile": {
     "prefix": "cyrea",
     "body": ["cy.readFile()"],
-    "description": "Insert cy.readFile()"
+    "description": "cy.readFile()"
   },
   "reload": {
     "prefix": "cyrel",
     "body": ["cy.reload()"],
-    "description": "Insert cy.reload()"
+    "description": "cy.reload()"
   },
   "request": {
     "prefix": "cyreq",
-    "body": ["cy.request('$1');"],
-    "description": "Insert cy.request()"
+    "body": ["cy.request('$1')"],
+    "description": "cy.request()"
   },
   "root": {
     "prefix": "cyro",
     "body": ["cy.root()"],
-    "description": "Insert cy.root()"
+    "description": "cy.root()"
   },
   "screenshot": {
     "prefix": "cyscre",
     "body": ["cy.screenshot()"],
-    "description": "Insert cy.screenshot()"
+    "description": "cy.screenshot()"
   },
   "scrollTo": {
     "prefix": "cyscro",
     "body": ["cy.scrollTo('$1')"],
-    "description": "Insert cy.scrollTo()"
+    "description": "cy.scrollTo()"
   },
   "setCookie": {
     "prefix": "cyse",
     "body": ["cy.setCookie('$1', '$2')"],
-    "description": "Insert cy.setCookie(key, value)"
+    "description": "cy.setCookie(key, value)"
   },
   "spy": {
     "prefix": "cysp",
-    "body": ["cy.spy('$1');"],
-    "description": "Insert cy.spy()"
+    "body": ["cy.spy('$1')"],
+    "description": "cy.spy()"
   },
   "stub": {
     "prefix": "cyst",
-    "body": ["cy.stub('$1');"],
-    "description": "Insert cy.stub()"
+    "body": ["cy.stub('$1')"],
+    "description": "cy.stub()"
   },
   "tick": {
     "prefix": "cytk",
     "body": ["cy.tick()"],
-    "description": "Insert cy.tick()"
+    "description": "cy.tick()"
   },
   "title": {
     "prefix": "cytt",
     "body": ["cy.title()"],
-    "description": "Insert cy.title()"
+    "description": "cy.title()"
   },
   "url": {
     "prefix": "cyur",
     "body": ["cy.url()"],
-    "description": "Insert cy.url()"
+    "description": "cy.url()"
   },
   "viewport": {
     "prefix": "cyvi",
     "body": ["cy.viewport('$1', '$2')"],
-    "description": "Insert cy.viewport(width, height)"
+    "description": "cy.viewport(width, height)"
   },
   "visit": {
     "prefix": "cyv",
-    "body": ["cy.visit('$1');"],
-    "description": "Insert cy.visit()"
+    "body": ["cy.visit('$1')"],
+    "description": "cy.visit()"
   },
   "wait": {
     "prefix": "cywa",
     "body": ["cy.wait('$1')"],
-    "description": "Insert cy.wait()"
+    "description": "cy.wait()"
   },
   "window": {
     "prefix": "cywi",
     "body": ["cy.window()"],
-    "description": "Insert cy.window()"
+    "description": "cy.window()"
   },
   "writeFile": {
     "prefix": "cywr",
     "body": ["cy.writeFile()"],
-    "description": "Insert cy.writeFile()"
+    "description": "cy.writeFile()"
   }
 }

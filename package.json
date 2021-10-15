@@ -1,20 +1,35 @@
 {
   "name": "cypress-vscode-snippets",
-  "displayName": "cypress-vscode-snippets",
-  "description": "",
+  "displayName": "Cypress VS Code Snippets",
+  "description": "Cypress snippets extension for VS Code",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.56.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/admah/cypress-vscode-snippets"
+  },
+  "bugs": {
+    "url": "https://github.com/admah/cypress-vscode-snippets/issues"
+  },
+  "homepage": "https://github.com/admah/cypress-vscode-snippets#readme",
+  "icon": "icons/logo.png",
+  "galleryBanner": {
+    "color": "#3ccd99",
+    "theme": "dark"
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "testing",
+    "vscode"
+  ],
   "categories": [
     "Snippets"
   ],
   "contributes": {
     "snippets": [
-      {
-        "language": "coffeescript",
-        "path": "./snippets/snippets.json"
-      },
       {
         "language": "javascript",
         "path": "./snippets/snippets.json"
