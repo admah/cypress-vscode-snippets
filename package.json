@@ -3,7 +3,7 @@
   "publisher": "admah",
   "displayName": "Cypress VS Code Snippets",
   "description": "Cypress snippets extension for VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.56.0"
   },
@@ -21,7 +21,7 @@
   "homepage": "https://github.com/admah/cypress-vscode-snippets#readme",
   "icon": "icons/logo.png",
   "galleryBanner": {
-    "color": "#3ccd99",
+    "color": "#0b6f47",
     "theme": "dark"
   },
   "keywords": [
