@@ -32,7 +32,8 @@
 | `cyro`   | cy.root()                    |
 | `cyscre` | cy.screenshot()              |
 | `cyscro` | cy.scrollTo()                |
-| `cyse`   | cy.setCookie(key, value)     |
+| `cyses`  | cy.session()                 |
+| `cysec`  | cy.setCookie(key, value)     |
 | `cysp`   | cy.spy()                     |
 | `cyst`   | cy.stub()                    |
 | `cytk`   | cy.tick()                    |
