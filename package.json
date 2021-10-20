@@ -2,7 +2,7 @@
   "name": "cypress-vscode-snippets",
   "displayName": "cypress-vscode-snippets",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.56.0"
   },

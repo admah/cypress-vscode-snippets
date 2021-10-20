@@ -150,8 +150,13 @@
     "body": ["cy.scrollTo('$1')"],
     "description": "Insert cy.scrollTo()"
   },
+  "session": {
+    "prefix": "cyses",
+    "body": ["cy.session('$1', () => {$2})"],
+    "description": "cy.session()"
+  },
   "setCookie": {
-    "prefix": "cyse",
+    "prefix": "cysec",
     "body": ["cy.setCookie('$1', '$2')"],
     "description": "Insert cy.setCookie(key, value)"
   },
