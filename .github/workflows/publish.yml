@@ -10,14 +10,29 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 14
-          registry-url: https://registry.npmjs.org/
+          node-version: 16.x
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Install semantic-release extra plugins
+        run: yarn add -D @semantic-release/changelog @semantic-release/git
 
       - name: Install vsce
         run: npm i -g vsce
 
-      - name: Publish
-        run: vsce publish -p ${{ secrets.VSCE_PAT }}
+      - name: Generate Changelog and Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
+
+      - name: Publish to Marketplace
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: vsce publish

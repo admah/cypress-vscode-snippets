@@ -114,6 +114,11 @@
     "body": ["cy.log()"],
     "description": "cy.log()"
   },
+  "origin": {
+    "prefix": "cyor",
+    "body": ["cy.origin('$1', {$2}, () => {$3})"],
+    "description": "cy.origin(url, options, callback)"
+  },
   "overwriteCommand": {
     "prefix": "cyco",
     "body": ["Cypress.Commands.overwrite('$1')"],
@@ -157,7 +162,7 @@
   "session": {
     "prefix": "cyses",
     "body": ["cy.session('$1', () => {$2})"],
-    "description": "cy.session()"
+    "description": "cy.session(id, setup)"
   },
   "setCookie": {
     "prefix": "cysec",
