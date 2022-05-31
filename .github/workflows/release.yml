@@ -21,11 +21,9 @@ jobs:
 
       - name: Install semantic-release extra plugins
         run: yarn add -D semantic-release @semantic-release/changelog @semantic-release/git
-        
+
       - name: Generate Changelog and Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
+        run: npx semantic-release
