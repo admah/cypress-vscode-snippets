@@ -3,13 +3,14 @@
   "publisher": "admah",
   "displayName": "Cypress VS Code Snippets",
   "description": "Cypress snippets extension for VS Code",
-  "version": "0.0.4",
+  "version": "0.0.0-semantic-release",
   "engines": {
     "vscode": "^1.56.0"
   },
   "scripts": {
     "package": "npx vsce package",
-    "publish": "npx vsce publish"
+    "publish": "npx vsce publish",
+    "cm": "cz"
   },
   "repository": {
     "type": "git",
@@ -48,5 +49,20 @@
         "path": "./snippets/snippets.json"
       }
     ]
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^8.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
   }
 }
